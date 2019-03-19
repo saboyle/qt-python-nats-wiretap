@@ -38,3 +38,5 @@ python nats_qt_wiretap.py localhost 4222 p1.s0
 * Configurable storage of received messages to DB.
 * Status bar showing connections.
 * Incorporation into MDI NATS console.
+* Pause scrolling.
+* Double click on msg shows detailed view.
