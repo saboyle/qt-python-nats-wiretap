@@ -1,6 +1,6 @@
 # Version 1 (basic)
 
-![./images/qt-wiretap.gif]
+![](../images/qt-wiretap.gif)
 
 To execute open 3 terminals: 
 
