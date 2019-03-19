@@ -5,16 +5,9 @@ import sys
 import asyncio
 
 from PyQt5.QtWidgets import (QWidget, QGridLayout, QApplication, QPlainTextEdit)
-from PyQt5.Qt import QEventLoop, QTimer
 from PyQt5.QtCore import QDateTime
-
-from quamash import QEventLoop, QThreadExecutor
+from quamash import QEventLoop
 from nats.aio.client import Client as NATS
-
-def qSleep(sec):
-    loop = QEventLoop()
-    QTimer.singleShot(sec, loop.quit)
-    loop.exec_()
 
 
 class QtWiretap(QWidget):
