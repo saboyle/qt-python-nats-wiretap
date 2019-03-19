@@ -1,0 +1,4 @@
+asyncio==3.4.3
+asyncio-nats-client==0.8.2
+PyQt5==5.12
+Quamash==0.6.1
