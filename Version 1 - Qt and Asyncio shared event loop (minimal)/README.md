@@ -10,9 +10,11 @@ Using the utility it is trivial to initiate multiple gui wiretaps to
 monitor intermediate queues within a distributed pipeline.
 
 Each invocation of the wiretap will display a near native (windows/linux/osx) gui 
-with low latency async updates each time a message is received.. 
+with low latency async updates each time a message is received.
 
 ![](../images/qt-wiretap.gif)
+
+Note: currently the theme is hardcoded but can be easily configured using Qt stylesheets: https://doc.qt.io/qt-5/stylesheet-syntax.html. 
 
 To execute open 3 terminals: 
 
