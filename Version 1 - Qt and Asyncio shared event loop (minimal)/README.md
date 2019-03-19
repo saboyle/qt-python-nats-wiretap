@@ -4,7 +4,7 @@ The basic gui wiretap combines the QT event loop with the Asyncio event loop and
 updates a plain text edit box each time a new message is received
 on a given queue.
 
-The NATS server, port and queuename is specified on the command line.
+The NATS server, port and queuename are specified on the command line.
 
 Using the utility it is trivial to initiate multiple gui wiretaps to 
 monitor intermediate queues within a distributed pipeline.
