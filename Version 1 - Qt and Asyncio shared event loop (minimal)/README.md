@@ -9,6 +9,9 @@ The NATS server, port and queuename is specified on the command line.
 Using the utility it is trivial to initiate multiple gui wiretaps to 
 monitor intermediate queues within a distributed pipeline.
 
+Each invocation of the wiretap will display a near native (windows/linux/osx) gui 
+with low latency async updates each time a message is received.. 
+
 ![](../images/qt-wiretap.gif)
 
 To execute open 3 terminals: 
@@ -24,7 +27,14 @@ docker run -p 4222:4222 -p 8222:8222 -p 6222:6222 --name gnatsd -ti nats:latest
 python nats_test_publisher.py
 ```
 
-3. Run the NATS/QT wiretap.
+3. Run the NATS/Qt wiretap.
 ``` bash
 python nats_qt_wiretap.py localhost 4222 p1.s0
 ```
+## Possible Enhancements
+* Buffer protection.
+* Dynamic highlights based on regex.
+* Configurable logging.
+* Configurable storage of received messages to DB.
+* Status bar showing connections.
+* Incorporation into MDI NATS console.
