@@ -29,12 +29,13 @@ class QtWiretap(QWidget):
         self.setLayout(grid)
         self.txt = QPlainTextEdit()
         self.txt.setReadOnly(True)
-        self.txt.setStyleSheet("background-color: #003366; color: #CCFFCC")
+        # self.txt.setStyleSheet("background-color: #003366; color: #CCFFCC")
+        self.txt.setStyleSheet("background-color: #BE2625; color: #CCFFCC")
 
         grid.addWidget(self.txt)
 
         self.move(300, 150)
-        self.setWindowTitle('Qt Nats Wiretap')
+        self.setWindowTitle(f"Qt Nats Wiretap - {sys.argv[3]}")
         self.show()
 
     def insertText(self, new_text):
